@@ -1,0 +1,149 @@
+.maindiv{
+    overflow: hidden;
+}
+.recentSection{
+    padding: 30px 30px 1px;
+}
+.tourSection{ 
+    padding: 30px 30px 1px;
+}
+.leaghSection{
+    padding: 30px 30px 1px;
+}
+.footSection{
+    padding: 30px 30px 1px; 
+}
+.recentItem{
+    padding: 30px 0;
+}
+.imge{
+    transition: .7s;
+}
+.laligh{
+    padding-top: 16px;
+    padding-bottom: 56px;
+}
+.tourTitle{
+    margin-bottom: 16px;
+}
+.footTitle{
+    margin-bottom: 16px; 
+}
+.leaghTitle{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+.tournaItem{
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+.football{
+    padding: 16px 0;
+}
+
+.maindiv:hover .imge{
+    transform: scale(1.1);
+}
+@media screen and (max-width:699.98px) {
+    .recentSection{
+        padding: 0 15px!important;
+        padding-top: 15px!important;
+        
+    }
+    .tourSection{
+        padding: 15px;
+    }
+    .leaghSection{
+        padding: 15px;
+    }
+    .footSection{
+        padding: 15px;
+        padding-top: 0;
+    }
+    .maindiv img{
+        margin:0 15px;
+    } 
+    .recentItem{
+        padding: 15px 0;
+    }
+    .tourTitle{
+        margin-bottom: 0;
+        margin-left: 3%;
+    }
+    .leaghTitle{
+        margin-bottom: 0;
+        margin-left: 3%;
+    }
+    .recentTitle{
+        margin-left: 3%;
+    }
+    .tournaItem{
+        padding-bottom: 0;
+    }
+    .football{
+        padding: 0;
+        padding-top: 16px;
+    }
+    .footTitle{
+        margin-bottom: 0;
+        margin-left: 3%;
+    }
+    .laligh{
+        padding-bottom: 28px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:991.98px){
+    .recentSection{
+        padding: 15px 20px!important; 
+    }
+    .recentTitle{
+        margin-left: 0!important;
+        padding: 30px 0 10px 0!important;
+        margin-left: 2%;
+
+    }
+    .tourSection{
+        padding: 15px;
+    }
+    .leaghSection{
+        padding: 15px;
+    }
+    .footSection{
+        padding: 15px;
+        padding-top: 0;
+    }
+    .maindiv img{
+        margin:0 15px;
+    } 
+    .recentItem{
+        padding: 15px 0;
+    }
+    .tourTitle{
+        margin-bottom: 0;
+        margin-left: 2%;
+    }
+    .leaghTitle{
+        margin-bottom: 0;
+        margin-left: 2%;
+    }
+    .recentTitle{
+        margin-left: 2%;
+    }
+    .tournaItem{
+        padding-bottom: 0;
+    }
+    .football{
+        padding: 0;
+        padding-top: 16px;
+    }
+    .footTitle{
+        margin-bottom: 0;
+        margin-left: 2%;
+    }
+    .laligh{
+        padding-bottom: 28px;
+    } 
+}

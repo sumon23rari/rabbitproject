@@ -1,0 +1,41 @@
+.privacyMain{
+    border-radius: 0 5px 5px 0;
+    max-height: 550px;
+    overflow: auto;
+  padding: 30px 40px;
+}
+.contentTitle h4{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 136%;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.contentTitle p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 137%;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.contentTitle h5{
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+}
+.privacyMain::-webkit-scrollbar{
+    width: 4px;
+    
+}
+
+/* .privacyMain::-webkit-scrollbar-thumb{
+    background: #ff6e01;
+    border-radius: 6px;
+    height: 8px;
+} */
+.privacyMain::-webkit-scrollbar-thumb{
+    background: #fe5502;
+    border-radius: 1rem;
+    border: .5rem solid transparent;
+ 
+}

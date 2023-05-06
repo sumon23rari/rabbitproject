@@ -1,0 +1,56 @@
+.sideVar{
+    box-shadow: 0px 0px 30px 5px rgb(0 0 0 / 5%);
+}
+.nav{
+    padding-bottom: 30px;
+}
+.nav button{
+    display: block;
+    text-align: left;
+    background-color: transparent;
+    border-bottom: 1px solid #686868;
+    width: 100%;
+    padding: 16px 0;
+    cursor: pointer;color: silver;
+    font-size: 16px;
+}
+
+.txt{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: #606060;
+    padding: 0 10px;
+    color: silver;
+}
+.icon{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: silver;
+    float: right;
+   opacity: 0;
+    padding-right: 20px;
+}
+.icon svg{
+    display: inline;
+   
+}
+
+/* invoiceStyle css */
+.activColor{
+ color: #fe5502;
+ position: relative;
+}
+.activColor:after{
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 2px;
+    background: #fe5502;
+    left: 0;
+}
+.activColor .icon{
+    opacity: 1;
+    
+}

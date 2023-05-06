@@ -1,0 +1,8 @@
+.leaghTop{
+    padding-top: 10%;
+}
+@media screen and (max-width:479.98px) {
+    .leaghTop{
+        padding-top: 17%;
+    }  
+}

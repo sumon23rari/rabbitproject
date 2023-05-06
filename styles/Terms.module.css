@@ -1,0 +1,41 @@
+.termMain{
+    padding: 30px 30px;
+    background: #404040;
+    max-height: 550px;
+    overflow: auto;
+}
+.contentTitle h4{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 136%;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.contentTitle p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 20px;
+    line-height: 137%;
+}
+.colapseterm{
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.colapstitle{
+    color: #fff;
+    background-color: #1a1a1a;
+    font-size: 18px;
+}
+.colapseContent{
+    font-weight: 400;
+    font-size: 14px;
+    color: #d6d6d6;
+    border-top: 1px solid #5d5d5d;
+    background-color: #1a1a1a;
+}
+/* .colapseContent p{
+    padding-top: 20px;
+   
+} */

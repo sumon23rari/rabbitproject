@@ -1,0 +1,96 @@
+.avater{
+    width: 30px;
+    height: 30px;
+    color:#ff6e01;
+    border-radius: 50%;
+    margin-top: 9%;
+    margin-left: 5%;
+}
+.subButton{
+    background: linear-gradient(254.81deg,#ff6e01 8.13%,#f42829 92.46%);
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 6px 20px;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.navLink a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+@media screen and (max-width:479.98px) {
+    .mainNavbar{
+        padding-left: 0!important;
+    }
+    .navStart{
+        width: 100%!important;
+        justify-content: space-between;
+     
+    }
+
+    .Btn{
+    text-align: left!important;
+    }
+  
+    .logInButton{
+        padding-left: 16px;
+    }
+    .logInButton svg{
+        display: inline!important;
+        color: #fff!important;
+        background: orangered;
+    }
+    .navEnd{
+        display: none;
+    }
+   
+    .dropContent{
+        background: #222!important;
+        padding-bottom:60px;
+        color: #fff!important;
+    }
+}
+@media screen and (min-width:480px) and (max-width:991.98px) {
+    .mainNavbar{
+        padding-left: 0!important;
+      
+    }
+    .darkIcon{
+        background: #222!important;  
+    }
+    .dropContent{
+        background: #222!important;
+        color: #fff!important;
+        z-index: 9999;
+        padding-bottom: 60px;
+    }
+    .navStart{
+        width: 100%!important;
+        justify-content: space-between;
+     
+    }
+    .navEnd{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) {
+    .mainNavbar{
+        padding-left: 0!important;
+     
+    }
+    /* .Btn{
+        color: #222;
+    } */
+    .dropContent{
+        background: #222!important;
+        color: #fff!important;
+    }    
+} 

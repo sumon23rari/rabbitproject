@@ -1,0 +1,112 @@
+.aboutTop{
+    padding-top: 120px;
+ background: #1a1a1a;
+}
+.sectionTitle{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 136%;
+    padding-bottom: 30px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.aboutbox{
+    background: #252525;
+    border: 1px solid #7d7d7d;
+    border-radius: 5px;
+    padding: 48px 77px 42px 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutxt{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 147%;
+    padding-right: 35px;
+}
+.aboutxt p{
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.aboutImg span{
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    max-width: 100%;
+}
+.aboutImg span img{
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+@media screen and (max-width:479.98px) {
+    .aboutbox {
+        padding: 20px 10px 10px 20px;
+    }
+    .aboutMain{
+        display: grid!important;
+        grid-template-columns: repeat(1,1fr)!important; 
+    }
+    .aboutImg{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:575.98px) {
+    .aboutbox{
+        padding: 28px 37px 22px 27px;
+    }
+    .aboutMain{
+        display: grid!important;
+        grid-template-columns: repeat(1,1fr)!important; 
+    }
+    .aboutImg{
+        padding: 15px 0;
+    }
+}
+
+@media screen  and (min-width:576px) and (max-width:767.98px) {
+    .aboutbox{
+        padding: 38px 32px 32px 32px;
+    }
+    .aboutMain{
+        display: grid!important;
+        grid-template-columns: repeat(1,1fr)!important; 
+    }
+    .aboutImg{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991.98px) {
+    .aboutbox{
+        padding: 38px 67px 32px 42px;
+    }
+    .aboutImg{
+        padding-top: 20px;
+    }
+    .aboutImg{
+        padding-bottom: 10px;
+    }
+}

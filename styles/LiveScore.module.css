@@ -1,0 +1,41 @@
+.liveHeading{
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-top: 90px;
+    background: #404040;
+    color: #fff;
+    margin: 0 20px;
+}
+.liveMain{
+    background:#404040;
+    margin:0 20px;
+    padding-top: 24px;
+    padding-bottom: 64px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+
+}
+.livemid{
+    overflow: hidden;
+    height: 180px;
+}
+.livemid .liveImg{
+    height: 100%!important;
+    transition: .8s;
+}
+.livemid:hover{
+    cursor: pointer;
+}
+.livemid:hover .liveImg{
+    transform: scale(1.2);
+}
+@media screen and (max-width:479.98px) {
+    .liveMain{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+      
+    }
+}

@@ -1,0 +1,132 @@
+
+.footerTitle{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: block;
+}
+.footerlast{
+    color: #ff6e01;
+}
+.footerCopy{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+@media screen and (max-width:575.98px) {
+    .footdiv{
+        display: contents!important;
+        row-gap: 16px!important;
+    }
+    .footdiv1{
+        margin-left: 7%;
+        margin-bottom: 10%;
+    }
+    .footdiv2{
+        display: inline-block;
+        width: 46%!important;
+        margin-left: 7%;
+    }
+    .footdiv2 a{
+        display: block;
+    }
+    .footdiv3{
+        display: inline-block;
+        width: 47%!important;
+        margin-bottom: 10%;
+    }
+    .footdiv3 .footerTitle{
+        margin-bottom: 23px;
+    }
+    .footdiv3 a{
+        display:  block;
+        margin-bottom: 3%;
+    }
+    .footdiv4{
+        margin-left: 7%;
+        display: inline-block;
+        width: 38% !important;;
+    }
+    .footdiv4 a{
+        display: block;
+        margin-bottom: 5%;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .footerTitle4{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 40%;
+        display: block;
+        color: #fff!important;
+        vertical-align: text-top;
+    }
+    .footdiv5{
+        width: 55%!important;
+        display: inline-block;
+    }
+    .footerTitle5{
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        color: #fff;
+        margin-bottom: 10%;
+    }
+    .footdiv4 a{
+        display: block;
+        margin-bottom: 15%;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .footdiv5 img{
+        margin-bottom: 12px;
+    }
+  
+}
+
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    .footdiv{
+     display: grid!important;
+     grid-template-columns: repeat(2,1fr)!important;
+    }
+    .footdiv1{
+        margin-left: 4%;
+        margin-right: 3%;
+        
+    }
+    .footerTitle{
+        font-size: 22px;
+    margin-top: 12px;
+    }
+    .footdiv2{
+      
+        width: 42%!important;
+        margin-left: 0;
+    }
+    .footdiv2 a{
+        display: block;
+    }
+    .footdiv3{
+        margin-left: 4%;
+        margin-right: 3%;
+    }
+    .footerTitle4{
+        font-size: 22px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .footdiv5{
+        margin-left: 4%;
+    }
+    .footerTitle5{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991.98px) {
+
+}

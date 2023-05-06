@@ -1,0 +1,26 @@
+.gdpMain{
+    border-radius: 0 5px 5px 0;
+    max-height: 550px;
+    overflow: auto;
+  padding: 30px 40px;
+}
+.contentTitle h4{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 136%;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.contentTitle p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 137%;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.contentTitle ol{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: number;
+}

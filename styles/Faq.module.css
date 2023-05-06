@@ -1,0 +1,29 @@
+.faqMain{
+    border-radius: 0 5px 5px 0;
+    max-height: 550px;
+    overflow: auto;
+  padding: 30px 40px;
+}
+.contentTitle{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 136%;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+.des{
+  padding-top: 20px;
+}
+/* =============scrollbar maintain================ */
+.faqMain::-webkit-scrollbar{
+  width: 4px;
+  
+}
+.faqMain::-webkit-scrollbar-thumb{
+  background: #fe5502;
+  border-radius: 1rem;
+  border: .5rem solid transparent;
+
+}
+/* =============scrollbar maintain================ */

@@ -27,6 +27,12 @@
  
     
 }
+.userIcon a:hover{
+    background: transparent;
+}
+.userIcon:hover{
+    background: transparent;
+}
 .navLink:hover{
     background: transparent;
 }
@@ -65,6 +71,7 @@
         color: #fff!important;
         background: orangered;
     }
+ 
     .navEnd{
         display: none;
     }
@@ -90,6 +97,8 @@
         color: #fff!important;
         z-index: 9999;
         padding-bottom: 20px;
+        position: absolute;
+        top: 55px;
     }
     .navStart{
         width: 100%!important;

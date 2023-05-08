@@ -49,7 +49,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
         </div>
       </label>
     {show?  <ul tabIndex={0} className={`menu menu-compact  p-2 shadow    ${currentTheme==='dark'?'bg-transparent text-white':''}`}>
-        <li><a><FiPower></FiPower> Logout</a></li>
+        <li className={Nastyle.userIcon}><a><FiPower></FiPower> Logout</a></li>
       </ul>:''}
     </div>
         </ul>:''}
@@ -92,7 +92,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
         </div>
       </label>
      {show? <ul tabIndex={0} className={`menu menu-compact dropdown-content  p-2 shadow bg-base-100 rounded-box w-42  ${currentTheme==='dark'?'bg-black text-white':''} ${Nastyle.dropButton}`}>
-        <li><a><FiPower></FiPower> Logout</a></li>
+        <li className={Nastyle.userIcon}><a><FiPower></FiPower> Logout</a></li>
       </ul>:''}
     </div>
   </div>

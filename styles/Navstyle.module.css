@@ -3,8 +3,8 @@
     height: 30px;
     color:#ff6e01;
     border-radius: 50%;
-    margin-top: 9%;
-    margin-left: 5%;
+    margin-top: 12%;
+    margin-left: 12%;
 }
 .subButton{
     background: linear-gradient(254.81deg,#ff6e01 8.13%,#f42829 92.46%);
@@ -24,7 +24,24 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
+ 
     
+}
+.navLink:hover{
+    background: transparent;
+}
+.navLink a:hover{
+    background: transparent;
+    color: #ff6e01!important;
+}
+.labelColor:hover{
+    background: transparent!important;
+}
+.dropButton{
+    position: absolute;
+    top:60px;
+    right: 12px;
+    border-radius: 10px;
 }
 @media screen and (max-width:479.98px) {
     .mainNavbar{
@@ -53,8 +70,10 @@
     }
    
     .dropContent{
+        position:absolute;
+        top: 20px;
         background: #222!important;
-        padding-bottom:60px;
+        padding-bottom:30px;
         color: #fff!important;
     }
 }
@@ -70,7 +89,7 @@
         background: #222!important;
         color: #fff!important;
         z-index: 9999;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
     }
     .navStart{
         width: 100%!important;

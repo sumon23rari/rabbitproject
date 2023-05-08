@@ -56,32 +56,45 @@ margin: 0 10px;
 }
 
 /* next preview button banner */
-.banner .slick-next{
-  top: 70%!important;
-  transform: translateX(0,-70%)!important;
-  width: 50px!important;
-  height: 37px!important;
-  border: 1px solid #ddd!important;
+.banner  .slick-next{
+  top: 80%!important;
+  transform: translateX(0,-80%)!important;
+  width: 70px!important;
+  height: 45px!important;
+  border: 1px solid #a09b9b!important;
   padding: 3px!important;
+  border-radius: 5px!important;
 
 }
-.banner .slick-prev{
-  top: 70%!important;
-  transform: translateX(0,-70%)!important;
-  width: 50px!important;
-  height: 37px!important;
-  border: 1px solid #ddd!important;
+.banner  .slick-prev{
+  top: 80%!important;
+  transform: translateX(0,-80%)!important;
+  width: 70px!important;
+  height: 45px!important;
+  border: 1px solid #a09b9b!important;
   padding: 3px!important;
+  border-radius: 5px!important;
+}
+.banner  .slick-prev:hover{
+  border: 1px solid #fff!important;
+  transition: linear .2s;
+}
+.banner .slick-next:hover{
+  border: 1px solid #fff!important;
+  transition: linear .2s;
 }
 .banner .slick-prev:before{
   position: absolute;
-  transform: translate(60%,45%)!important;
+  
+  transform: translate(90%,60%)!important;
   opacity: 1!important;
 }
 .banner .slick-next:before{
   position: absolute;
-  transform: translate(60%,45%)!important;
+
+  transform: translate(90%,60%)!important;
   opacity: 1!important;
+  
 }
 /* ==============recentItem style hear================== */
 .recentItem .slick-prev{
@@ -153,6 +166,12 @@ margin: 0 10px;
   .laligh .slick-prev{
     display: none!important;
   }
+  .banner .slick-prev{
+    display: none!important;
+  }
+  .banner .slick-next{
+    display: none!important;
+  }
 }
 
 @media screen and (min-width:578px) {
@@ -162,6 +181,7 @@ margin: 0 10px;
  .banner .slick-dots li{
     display: none!important;
   }
+ 
 }
 @media screen and (min-width:992px) {
   .recentItem .slick-prev{

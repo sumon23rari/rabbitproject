@@ -8,23 +8,23 @@ import React from 'react'
  function Catagory() {
   return (
     <div className={cataStyle.mainDiv}>
-        <div className="main flex justify-center gap-4 lg:gap-8">
-         <div className={`text-center p-12 rounded-lg bg-neutral border-orange-700  hover:border-2 ${cataStyle.part1}`}>
+        <div className="main flex justify-center gap-4 lg:gap-4">
+         <div className={`text-center px-24 py-5 rounded-lg  border-transparent border-2 hover:border-orange-700 ${cataStyle.part1}`}>
                 <Link href="#">
                     <Image src={cricket} alt="cricket"></Image>
-                    <h5 className='pt-4 text-white'>cricket</h5>
+                    <h5 className=' text-white'>cricket</h5>
                 </Link>
             </div>
-         <div className={`text-center p-12 rounded-lg bg-neutral border-orange-700  hover:border-2 ${cataStyle.part1}`}>
+         <div className={`text-center px-24 py-5  rounded-lg  border-transparent  border-2  hover:border-orange-700 ${cataStyle.part1}`}>
                 <Link href="#">
                     <Image src={football} alt="cricket"></Image>
-                    <h5 className='pt-4 text-white'>football</h5>
+                    <h5 className=' text-white'>football</h5>
                 </Link>
             </div> 
-            <div className={`text-center p-12 rounded-lg bg-neutral border-orange-700  hover:border-2 ${cataStyle.part1}`}>
+            <div className={`text-center px-24 py-5  rounded-lg  border-transparent border-2  hover:border-orange-700 ${cataStyle.part1}`}>
                 <Link href="#">
                     <Image src={cricket} alt="cricket"></Image>
-                    <h5 className='pt-4 text-white'>leagh</h5>
+                    <h5 className=' text-white'>leagh</h5>
                 </Link>
             </div>
         </div>

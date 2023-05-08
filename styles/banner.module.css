@@ -9,3 +9,31 @@
     background: white;
    
 }
+.buttonGroup{
+    position: absolute;
+    top: 72%;
+ margin-left: 30px;
+}
+.btn{
+    padding: 15px 20px!important;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    margin-right: 30px; 
+}
+.watchButton{
+    padding: 15px 44px!important;
+    background: linear-gradient(254.81deg,#ff6e01 8.13%,#f42829 92.46%);
+}
+.shareButton{
+    color: #5b5b5b;
+    background-color: #fff;
+    padding: 20px!important;
+    
+}
+.watchlist{
+    color: #5b5b5b;
+    background-color: #fff;
+}

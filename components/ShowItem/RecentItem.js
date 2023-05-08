@@ -16,15 +16,15 @@ import Image from 'next/image';
         dots: false,
          infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide: 1,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 4,
+              slidesToScroll: 1,
               infinite: true,
               dots: false
             }
@@ -32,8 +32,8 @@ import Image from 'next/image';
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 3,
+              slidesToScroll: 1,
               initialSlide: 2
             }
           },
@@ -50,9 +50,9 @@ import Image from 'next/image';
       };
   return (
     <div className={tournaStyle.recentSection}>
-        <div>
-           <Link href="#" className={`text-white capitalize text-xl font-bold -mt-6 inline-block ${tournaStyle.recentTitle}`}>
-            recent <span><HiChevronRight  className='inline'></HiChevronRight>
+        <div className='text-center'>
+           <Link href="#" className={`text-white capitalize text-2xl font-bold text-center -mt-6 inline-block ${tournaStyle.recentTitle}`}>
+            recent <span><HiChevronRight  className='inline text-center'></HiChevronRight>
             </span>
            </Link>
         </div>

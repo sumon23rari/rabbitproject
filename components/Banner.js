@@ -1,18 +1,26 @@
-
 import React from 'react'
 import img1 from '../public/images/banner/banner1.jpg';
 import img2 from '../public/images/banner/banner2.jpg';
-import img3 from '../public/images/banner/banner3.jpg';
-import img4 from '../public/images/banner/banner4.jpg';
+import img3 from '../public/images/banner/banner3 .jpg';
 import Image from 'next/image';
 import Slider from 'react-slick';
+import { BsPlayFill,BsPlus } from 'react-icons/bs';
+import { FiShare2 } from 'react-icons/fi';
 import bann from '../styles/banner.module.css';
+
+
+
+class Question extends React.Component {
+  render() {
+    return <h3> Lets go for a <FaBeer />? </h3>
+  }
+}
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: "block",position:'absloute',right:'30px',zIndex:20}}
+      style={{ ...style, position:'absolute',right:'5%',zIndex:20}}
       onClick={onClick}
     />
   );
@@ -23,7 +31,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-       style={{ ...style, display: "block",position:'absloute',left:'30px',zIndex:20}}
+       style={{ ...style,  position: 'absolute',left:'80%',zIndex:20}}
       onClick={onClick}
     />
   );
@@ -42,7 +50,7 @@ const settings = {
   responsive: [
 
     {
-      breakpoint: 880,
+      breakpoint: 1070,
       settings: {
      dots:false
       }
@@ -56,23 +64,39 @@ const settings = {
   ]
 };
   return (
-  <div>
-   <Slider {...settings} className='banner' style={{paddingTop:'64px'}}>
+   <Slider {...settings} className='banner' style={{paddingTop:'64px',background:'#252525'}}>
+    {/* =============banner 01 item====== */}
     <div>
-      <Image src={img1} className='w-full' alt='img1'></Image>
+
+      <Image src={img1} className=' h-full' alt='img1'>
+
+      </Image>
+      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+  <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button>  <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
+  </div>
     </div>
+       {/* =============banner 02 item====== */}
     <div>
-      <Image src={img2} className='w-full' alt='img1'></Image>
+      <Image src={img2} className='h-full' alt='img1'></Image>
+      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+  <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button>  <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
+  </div>
     </div>
+   
+  {/* ==========banner 03 part=========== */}
     <div>
-      <Image src={img3} className='w-full' alt='img1'></Image>
+      <Image src={img3} className='h-full' alt='img1'></Image>
+      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+  <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button>  <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
+  </div>
     </div>
+    {/* ===========last banner item */}
     <div>
-      <Image src={img4} className='w-full' alt='img1'></Image>
+      <Image src={img1} className='h-full' alt='img1'></Image>
+      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+  <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button> <button className= {`${bann.btn} ${bann.watchlist}`}><BsPlus className='inline'></BsPlus> <span>add to watch List</span></button> <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
+  </div>
     </div>
    </Slider>
-  </div>
-  
-
   )
 }

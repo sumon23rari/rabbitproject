@@ -2,15 +2,27 @@
     background:#252525;
     padding: 64px;
 }
+.part1{
+    background: #404040!important;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #404040;
+    cursor: pointer;
+    width: 25%;
+    max-width: 250px;
+    margin-bottom: 10px;
+    
+}
+.part1 img{
+    margin-left: 33%;
+}
 @media screen and (max-width:479.98px) {
     .mainDiv{
         padding: 32px!important;
         background:#252525;
     }
-    .part1{
-        background: rgb(64, 64, 64);
-        padding: 10px;
-    }
+   
     .part1 img{
         width: 50px;
         height: 50px;

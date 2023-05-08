@@ -16,15 +16,15 @@ function Tournament() {
         dots: false,
          infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 4,
+              slidesToScroll: 1,
               infinite: true,
               dots: false
             }
@@ -32,8 +32,8 @@ function Tournament() {
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 3,
+              slidesToScroll: 1,
               initialSlide: 2
             }
           },
@@ -50,8 +50,8 @@ function Tournament() {
       };
   return (
     <div  className={tournaStyle.tourSection}>
-         <div>
-           <Link href="#" className={`text-white capitalize text-xl font-bold inline-block ${tournaStyle.tourTitle}`}>
+         <div className='text-center'>
+           <Link href="#" className={`text-white capitalize text-2xl font-bold inline-block ${tournaStyle.tourTitle}`}>
             India tours of bangladesh <span><HiChevronRight  className='inline'></HiChevronRight>
             </span>
            </Link>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CgProfile} from 'react-icons/cg';
 import {BsFillMoonStarsFill,BsSun} from 'react-icons/bs';
 import {FiPower} from 'react-icons/fi';
@@ -8,14 +8,23 @@ import logoLight from '../public/images/imagelight.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 export default function Navbarsd({handleDark,handlelight,currentTheme}) {
+  const [show,setShow]=useState(false);
+  const [show1,setShow1]=useState(false);
+  const showDrop=()=>{
+    setShow1(!show1)
+  }
+ 
+  const showbutton=()=>{
+    setShow(!show)
+  }
   return (
     <div className={`fixed z-30 navbar bg-base-100  ${currentTheme==='dark'?'bg-black text-white':''} ${Nastyle.mainNavbar}`}>
     <div className={`navbar-start ${Nastyle.navStart}`}>
-      <div className={`dropdown ${Nastyle.Drop}`}>
-        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+      <div className={`${Nastyle.Drop}`}>
+        <label tabIndex={0} className="btn btn-ghost lg:hidden" onClick={showDrop}>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
-        <ul tabIndex={0} className={`menu menu-compact dropdown-content mt-2 p-2 pb-10 shadow bg-base-100  w-screen ${Nastyle.dropContent}`}>
+       {show1? <ul tabIndex={0} className={`menu menu-compact dropdown-content mt-2 p-2 pb-4 shadow bg-base-100  w-screen ${Nastyle.dropContent}`}>
           <li><Link href='/'>Home</Link></li>
           <li tabIndex={0}>
             <Link href='/LiveScore' className="justify-between">
@@ -33,17 +42,17 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
   </button>) }
           </li>
          
-          <div className="dropdown">
+          <div onClick={showbutton}>
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-         <CgProfile className={Nastyle.avater}></CgProfile>
+        <div className="w-10 rounded-full ml-2">
+         <CgProfile className={` ${Nastyle.avater}`}></CgProfile>
         </div>
       </label>
-      <ul tabIndex={0} className={`menu menu-compact dropdown-content p-2 shadow    ${currentTheme==='dark'?'bg-transparent text-white':''}`}>
+    {show?  <ul tabIndex={0} className={`menu menu-compact  p-2 shadow    ${currentTheme==='dark'?'bg-transparent text-white':''}`}>
         <li><a><FiPower></FiPower> Logout</a></li>
-      </ul>
+      </ul>:''}
     </div>
-        </ul>
+        </ul>:''}
       </div>
       <a className={`btn btn-ghost normal-case text-xl ${Nastyle.Btn}`}>
         
@@ -57,7 +66,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
           </li>
         <li  className={Nastyle.navLink} tabIndex={0}>
           
-          <Link href='/LiveScore'>livescore</Link>
+          <Link href='/LiveScore'>livescore1</Link>
         </li>
         <li className={Nastyle.navLink}>
           <Link href="/Leages">leages</Link>
@@ -76,15 +85,15 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
   </button>) }
   
       <a className={`${Nastyle.subButton}`}>subscribe now</a>
-      <div className="dropdown dropdown-end">
-      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+      <div onClick={showbutton}>
+      <label tabIndex={0} className={`btn btn-ghost btn-circle avatar ${Nastyle.labelColor}`}>
         <div className="w-10 rounded-full">
          <CgProfile className={Nastyle.avater}></CgProfile>
         </div>
       </label>
-      <ul tabIndex={0} className={`menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52  ${currentTheme==='dark'?'bg-black text-white':''}`}>
+     {show? <ul tabIndex={0} className={`menu menu-compact dropdown-content  p-2 shadow bg-base-100 rounded-box w-42  ${currentTheme==='dark'?'bg-black text-white':''} ${Nastyle.dropButton}`}>
         <li><a><FiPower></FiPower> Logout</a></li>
-      </ul>
+      </ul>:''}
     </div>
   </div>
     

@@ -18,13 +18,14 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
     setShow(!show)
   }
   return (
-    <div className={`fixed z-30 navbar bg-base-100  ${currentTheme==='dark'?'bg-black text-white':''} ${Nastyle.mainNavbar}`}>
+    <div className={`fixed z-30 navbar bg-base-100  ${currentTheme==='dark'?'bg-black text-white':'bg-[#ddd]'} ${Nastyle.mainNavbar}`}>
     <div className={`navbar-start ${Nastyle.navStart}`}>
       <div className={`${Nastyle.Drop}`}>
         <label tabIndex={0} className="btn btn-ghost lg:hidden" onClick={showDrop}>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
-       {show1? <ul tabIndex={0} className={`menu menu-compact dropdown-content mt-2 p-2 pb-4 shadow bg-base-100  w-screen ${Nastyle.dropContent}`}>
+        <span className='lg:hidden'>
+        {show1? <ul tabIndex={0} className={`menu menu-compact dropdown-content mt-2 p-2 pb-4 shadow bg-base-100  w-screen ${Nastyle.dropContent}`}>
           <li><Link href='/'>Home</Link></li>
           <li tabIndex={0}>
             <Link href='/LiveScore' className="justify-between">
@@ -53,6 +54,8 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
       </ul>:''}
     </div>
         </ul>:''}
+        </span>
+      
       </div>
       <a className={`btn btn-ghost normal-case text-xl ${Nastyle.Btn}`}>
         
@@ -80,7 +83,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
     </button>
     {currentTheme==='dark' ? ( <button className="bg-black-700 hover:bg-black rounded-md  p-4" onClick={handlelight}>
     <BsSun></BsSun>
-  </button>):(<button className="bg-white z-50 rounded-md  p-4 hover:bg-gray-300" onClick={handleDark}>
+  </button>):(<button className="bg-[#ddd] z-50 rounded-md  p-4" onClick={handleDark}>
   <BsFillMoonStarsFill></BsFillMoonStarsFill>
   </button>) }
   

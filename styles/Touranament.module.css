@@ -1,5 +1,6 @@
 .maindiv{
     overflow: hidden;
+    position: relative;
 }
 .recentSection{
     padding: 30px 30px 1px;
@@ -20,6 +21,19 @@
     transition: .7s;
     margin: 0 15px!important;
     overflow: hidden!important;
+   
+}
+.primButton{
+    background: linear-gradient(254.81deg,#ff6e01 8.13%,#f42829 92.46%);
+    border-radius: 4px;
+    padding: 4px 15px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    z-index: 22222!important;
 }
 .laligh{
     padding-top: 16px;
@@ -34,7 +48,7 @@
 .leaghTitle{
     margin-bottom: 10px;
     text-transform: capitalize;
-    color: #fff;
+ 
     font-weight: 700;
     display: inline-block;
     font-size: 24px;

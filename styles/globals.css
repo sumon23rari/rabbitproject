@@ -83,16 +83,17 @@ margin: 0 10px;
   border: 1px solid #fff!important;
   transition: linear .2s;
 }
+
 .banner .slick-prev:before{
   position: absolute;
-  
-  transform: translate(90%,60%)!important;
+  transform: translate(95%,60%)!important;
   opacity: 1!important;
 }
+
 .banner .slick-next:before{
   position: absolute;
 
-  transform: translate(90%,60%)!important;
+  transform: translate(95%,60%)!important;
   opacity: 1!important;
   
 }

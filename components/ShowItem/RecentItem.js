@@ -51,7 +51,7 @@ import Image from 'next/image';
   return (
     <div className={tournaStyle.recentSection}>
         <div className='text-center'>
-           <Link href="#" className={`text-white capitalize text-2xl font-bold text-center -mt-6 inline-block ${tournaStyle.recentTitle}`}>
+           <Link href="#" className={`capitalize text-2xl font-bold text-center -mt-6 inline-block ${tournaStyle.recentTitle}`}>
             recent <span><HiChevronRight  className='inline text-center'></HiChevronRight>
             </span>
            </Link>
@@ -59,24 +59,31 @@ import Image from 'next/image';
 <Slider {...settings} className={`${tournaStyle.recentItem} recentItem`}>
     <div className={tournaStyle.maindiv}>
         <Image src={recent1} alt="recent1" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent2} alt="recent2" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent3} alt="recent3" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent4} alt="recent4" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent5} alt="recent5" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent6} alt="recent6" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent7} alt="recent7" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
 </Slider>
     </div>

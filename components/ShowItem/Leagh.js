@@ -56,21 +56,27 @@ import tournaStyle from '../../styles/Touranament.module.css';
         <Slider {...settings}  className={`laligh ${tournaStyle.laligh}`}>
         <div   className={tournaStyle.maindiv}>
             <Image src={legimg1} alt="foot1" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div   className={tournaStyle.maindiv}>
             <Image src={legimg2} alt="foot2" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div   className={tournaStyle.maindiv}>
             <Image src={legimg3} alt="foot3" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div   className={tournaStyle.maindiv}>
             <Image src={legimg4} alt="foot4" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div   className={tournaStyle.maindiv}>
             <Image src={legimg1} alt="foot1" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div  className={tournaStyle.maindiv}>
             <Image src={legimg2} alt="foot2" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         </Slider>
     </div>

@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
     />
   );
 }
-export default function Banner() { 
+export default function Banner({currentTheme}) { 
 
 const settings = {
   dots: true,
@@ -64,7 +64,7 @@ const settings = {
   ]
 };
   return (
-   <Slider {...settings} className='banner' style={{paddingTop:'64px',background:'#252525'}}>
+   <Slider {...settings} className={`banner ${currentTheme==='dark'?'bg-[#252525]':'bg-white'}`} style={{paddingTop:'64px',background:'',}}>
     {/* =============banner 01 item====== */}
     <div>
 

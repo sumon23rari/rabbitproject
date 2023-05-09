@@ -59,24 +59,31 @@ function Tournament() {
         <Slider {...settings} className={` tournaItem ${tournaStyle.tournaItem}`}>
         <div  className={tournaStyle.maindiv}>
         <Image src={img1} alt="recent1" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div  className={tournaStyle.maindiv}>
         <Image src={img2} alt="recent2" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div  className={tournaStyle.maindiv}>
         <Image src={img3} alt="recent3" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={img4} alt="recent4" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div  className={tournaStyle.maindiv}>
         <Image src={img5} alt="recent5" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div  className={tournaStyle.maindiv}>
         <Image src={img6} alt="recent6" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={img7} alt="recent7" className={tournaStyle.imge}></Image>
+        <div className={tournaStyle.primButton}>premum</div>
     </div>
         </Slider>
 

@@ -30,12 +30,12 @@ export default function Home() {
     <Head>
 <title>ribbithold</title>
     </Head>
-    <main>
+    <main currentTheme={currentTheme}>
     <Navbarsd handleDark={handleDark} handlelight={handlelight} currentTheme={currentTheme}></Navbarsd>
-    <Banner></Banner>
-    <Catagory></Catagory>
-    <ShowItem></ShowItem>
-    <Footer></Footer>
+    <Banner currentTheme={currentTheme}></Banner>
+    <Catagory currentTheme={currentTheme}></Catagory>
+    <ShowItem currentTheme={currentTheme}></ShowItem>
+    <Footer currentTheme={currentTheme}></Footer>
     </main>
     </div>
   )

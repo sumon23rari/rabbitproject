@@ -57,21 +57,27 @@ import tournaStyle from '../../styles/Touranament.module.css';
         <Slider {...settings} className={`${tournaStyle.football} football`}>
         <div className={tournaStyle.maindiv}>
             <Image src={foot1} alt="foot1" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div className={tournaStyle.maindiv}>
             <Image src={foot2} alt="foot2" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div className={tournaStyle.maindiv}>
             <Image src={foot3} alt="foot3" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div className={tournaStyle.maindiv}>
             <Image src={foot4} alt="foot4" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div className={tournaStyle.maindiv}>
             <Image src={foot1} alt="foot1" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         <div className={tournaStyle.maindiv}>
             <Image src={foot2} alt="foot2" className={tournaStyle.imge}></Image>
+            <div className={tournaStyle.primButton}>premum</div>
         </div>
         </Slider>
     </div>

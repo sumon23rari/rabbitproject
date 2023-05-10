@@ -59,31 +59,31 @@ import Image from 'next/image';
 <Slider {...settings} className={`${tournaStyle.recentItem} recentItem`}>
     <div className={tournaStyle.maindiv}>
         <Image src={recent1} alt="recent1" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent2} alt="recent2" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent3} alt="recent3" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent4} alt="recent4" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent5} alt="recent5" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent6} alt="recent6" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
     <div className={tournaStyle.maindiv}>
         <Image src={recent7} alt="recent7" className={tournaStyle.imge}></Image>
-        <div className={tournaStyle.primButton}>premum</div>
+        <div className={tournaStyle.primButton}>premium</div>
     </div>
 </Slider>
     </div>

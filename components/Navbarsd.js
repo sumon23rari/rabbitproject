@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { CgProfile} from 'react-icons/cg';
 import {BsFillMoonStarsFill,BsSun} from 'react-icons/bs';
+import {RxMagnifyingGlass} from 'react-icons/rx';
 import {FiPower} from 'react-icons/fi';
 import Nastyle from '../styles/Navstyle.module.css';
 import logo from '../public/images/logo1.jpg';
 import logoLight from '../public/images/imagelight.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
+import Search from './Search';
 export default function Navbarsd({handleDark,handlelight,currentTheme}) {
   const [show,setShow]=useState(false);
   const [show1,setShow1]=useState(false);
@@ -42,7 +44,19 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
   <BsFillMoonStarsFill></BsFillMoonStarsFill>
   </button>) }
           </li>
-         
+         <li>
+         <label htmlFor="my-modal-5" className={`btn justify-start ${currentTheme==='dark'?'bg-transparent text-white hover:bg-transparent':'bg-transparent text-white border-none hover:bg-transparent'}`}> <RxMagnifyingGlass className='h-5 w-5 text-left float-left'></RxMagnifyingGlass></label>
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal-5" className="modal-toggle" />
+<div className={`modal rounded-none md:p-0 sm:p-0 p-0`}>
+  <div className={`modal-box sm:px-0 p-0 max-w-full max-h-full w-full h-full rounded-none ${currentTheme==='dark'?'bg-[#404040!important] z-50':'bg-[#d6d6d6!important] z-50'}`}>
+ 
+ <Search currentTheme={currentTheme}></Search>
+  
+  </div>
+</div>
+         </li>
           <div onClick={showbutton}>
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full ml-2">
@@ -77,10 +91,21 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
         
       </ul>
     </div>
+
+    {/*===================large device part======================== */}
     <div className={`navbar-end ${Nastyle.navEnd}`}>
-    <button className="btn btn-ghost btn-circle">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-    </button>
+    
+    <label htmlFor="my-modal-6" className={`btn ${currentTheme==='dark'?'bg-transparent text-white hover:bg-transparent':'bg-transparent text-black border-none hover:bg-transparent'}`}> <RxMagnifyingGlass className='h-5 w-5'></RxMagnifyingGlass></label>
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal-6" className="modal-toggle" />
+<div className={`modal rounded-none`}>
+  <div className={`modal-box max-w-full max-h-full w-full h-full rounded-none ${currentTheme==='dark'?'bg-[#404040!important] z-50':'bg-[#d6d6d6!important] z-50'}`}>
+ 
+ <Search currentTheme={currentTheme}></Search>
+  
+  </div>
+</div>
     {currentTheme==='dark' ? ( <button className="bg-black-700 hover:bg-black rounded-md  p-4" onClick={handlelight}>
     <BsSun></BsSun>
   </button>):(<button className="bg-[#ddd] z-50 rounded-md  p-4" onClick={handleDark}>

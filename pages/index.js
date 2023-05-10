@@ -25,6 +25,7 @@ export default function Home() {
   const handleDark=()=>{
     setTheme('dark')
   }
+  // export const[handleDark,handlelight,currentTheme]=
   return (
     <div>
     <Head>

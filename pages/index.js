@@ -6,6 +6,7 @@ import ShowItem from '@/components/ShowItem/ShowItem';
 import Head from 'next/head'
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import Package from './Package';
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
     <Banner currentTheme={currentTheme}></Banner>
     <Catagory currentTheme={currentTheme}></Catagory>
     <ShowItem currentTheme={currentTheme}></ShowItem>
+    <Package></Package>
     <Footer currentTheme={currentTheme}></Footer>
     </main>
     </div>

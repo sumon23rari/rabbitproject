@@ -112,7 +112,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
   <BsFillMoonStarsFill></BsFillMoonStarsFill>
   </button>) }
   
-      <a className={`${Nastyle.subButton}`}>subscribe now</a>
+      <a className={`${Nastyle.subButton}`} href='/Package'>subscribe now</a>
       <div onClick={showbutton}>
       <label tabIndex={0} className={`btn btn-ghost btn-circle avatar ${Nastyle.labelColor}`}>
         <div className="w-10 rounded-full">

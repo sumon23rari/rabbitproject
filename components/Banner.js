@@ -20,6 +20,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
+     
       style={{ ...style, position:'absolute',right:'5%',zIndex:20}}
       onClick={onClick}
     />
@@ -64,7 +65,7 @@ const settings = {
   ]
 };
   return (
-   <Slider {...settings} className={`banner ${currentTheme==='dark'?'bg-[#252525]':'bg-white'}`} style={{paddingTop:'64px',background:'',}}>
+   <Slider {...settings} className={`banner ${currentTheme==='dark'?'bg-[#252525]':'bg-[#e8e8ea]'}`} style={{paddingTop:'64px',background:'',}}>
     {/* =============banner 01 item====== */}
     <div>
 

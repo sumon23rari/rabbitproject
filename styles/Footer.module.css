@@ -38,28 +38,17 @@ display: block;
     line-height: 147%;
     margin-bottom: 15px;
     display: block;  
+    } 
+    .footbottom{
+        text-align: center;
+        display: block;
     }
-    /* .footdiv{
-        
+    .footxt{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 4px;
     }
-    .footdiv1{
-        width: 75%;
-    }
-    .footlink1{
-        text-decoration: none;
-        margin-bottom: 20px!important;
-    }
-    .footdiv2{
-        width: 47%;
-        float: left;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    .footdiv3{
-        width: 47%;
-        float: left;
-    } */
- 
 }
 
 @media screen and (min-width:576px) and (max-width:767.98px) {
@@ -153,4 +142,9 @@ display: block;
     margin-bottom: 15px;
     display: block;
     } 
+    /* .footerCopy{
+       display: flex;
+        margin: 0 auto;
+        gap: 40px;
+    } */
 }

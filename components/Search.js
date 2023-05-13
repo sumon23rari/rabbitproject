@@ -27,9 +27,9 @@ export default function Search({currentTheme}) {
         <div className="search px-[20px] xl:px-[30px] md:px-[30px] sm:px-[30px]">
 <form className={`pb-[30px] lg:pt-7 pt-10 sm:pt-10 md:pt-10 border-b  ${currentTheme==='dark'?'border-[#ddd]':'border-[#404040]'}`}>
     <div>
-        <input type="text" class="form-control lg:text-[30px] text-[14px] md:pb-3 sm:text-[20px]  sm:pb-3 inline-block  bg-transparent capitalize w-full" placeholder='search sports,drama or your desire shows' />
+        <input type="text" class="form-control lg:text-[30px] text-[14px] md:pb-3 sm:text-[20px] outline-0  sm:pb-3 inline-block  bg-transparent capitalize w-full" placeholder='search sports,drama or your desire shows' />
         <label htmlFor="my-modal-5" className={`btn btn-lg bg-transparent border-0 lg:hidden  xl:hidden  absolute right-[1%] top-[6%] md:top-[20%]  sm:top-[20%] md:text-[30px] text-[20px] sm:right-[3%] hover:bg-transparent ${currentTheme==='dark'?'text-[#ddd]':'text-black'}`}>✕</label>
-        <label htmlFor="my-modal-6" className={`btn hidden lg:block xl:block btn-lg bg-transparent border-0 lg:btn-md absolute lg:top-[10%] xl:top-[10%] lg:text-[30px] hover:bg-transparent ${currentTheme==='dark'?'text-[#ddd]':'text-black'}`}>✕</label>
+        <label htmlFor="my-modal-6" className={`btn hidden lg:block xl:block btn-lg bg-transparent border-0 lg:btn-md absolute lg:top-[20%] lg:right-[4%] xl:right-[4%] xl:top-[20%] lg:text-[30px] hover:bg-transparent ${currentTheme==='dark'?'text-[#ddd]':'text-black'}`}>✕</label>
     </div>
 </form>
         </div>

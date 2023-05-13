@@ -3,6 +3,7 @@ import React from 'react'
 import google from '../public/images/google1.jpg';
 import app from '../public/images/app.jpg';
 import logo from '../public/images/logo1.jpg';
+import logolight from '../public/images/imagelight.jpg';
 import { BsTelephone } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 import footerst from '../styles/Footer.module.css';
@@ -11,13 +12,13 @@ import Link from 'next/link';
 
   return (
     <div>
-      <div style={{padding:' 40px  0'}} className={`${currentTheme==='dark'?'bg-[#171717] text-white':'bg-white text-black'}`}>
+      <div style={{padding:' 40px  0'}} className={`${currentTheme==='dark'?'bg-[#171717] text-white':'bg-[#e8e8ea] text-black'}`}>
       <div className={`container mx-auto ${footerst.containerDiv}`}>
-    <footer className={` sm:gap-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-[30px] ${footerst.footdiv}`} >
+    <footer className={` sm:gap-12 md:gap-8 lg:gap-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 px-[30px] ${footerst.footdiv}`} >
 
-    <div className={`col-span-2 md:col-span-1 lg:col-span-1 xl:col-span-1  sm:col-span-1 ${footerst.footdiv1}`}>
+    <div className={`col-span-2 md:col-span-1 lg:col-span-2 xl:col-span-2  sm:col-span-1 ${footerst.footdiv1}`}>
       <span className="footer-title opacity-100 mb-6">
-        <Image src={logo} alt="logo"></Image>
+       {currentTheme==='dark'?<Image src={logo} alt="logo"></Image>:<Image src={logolight} alt="logoLight"></Image>}
         </span> 
     <div className='font-semibold  hover:cursor-pointer pb-3 mt-[30px]'>
       <Link href="#" className={footerst.footlink1}>
@@ -36,18 +37,18 @@ import Link from 'next/link';
     <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
   </div>
     </div> 
-    <div className={`md:pl-12 lg:pl-20 ${footerst.footdiv2}`}>
+    <div className={`lg:pl-0 xl:pl:0 md:pl-16 ${footerst.footdiv2}`}>
       <span className={footerst.footerTitle}>Browsr</span> 
    <Link href='/' className='capitalize font-medium text-md'>home</Link>
 <Link href="/Catagories" className='capitalize font-medium text-md'>highlights</Link>
 <Link href="/Catagories" className='capitalize font-medium text-md'>Catagories</Link>
     </div> 
-    <div className={`md:pl-6 ${footerst.footdiv3}`}>
+    <div className={`${footerst.footdiv3}`}>
       <span  className={footerst.footerTitle}>Quick Links</span> 
       <Link href='/AboutUs' className='capitalize font-medium text-md'>about us</Link>
       <Link href='/FaqPage' className='capitalize font-medium text-md'>faqs</Link>
     </div>
-    <div className={`lg:pl-6 ${footerst.footdiv4}`}>
+    <div className={`lg:pr-0 xl:pr-0 md:pr-16 ${footerst.footdiv4}`}>
       <span  className={footerst.footerTitle}>Legal</span> 
       <Link href='/FaqPage' className='capitalize font-medium text-md'>Terms of use</Link>
       <Link href='/FaqPage' className='capitalize font-medium text-md'>Privacy policy</Link>
@@ -62,9 +63,13 @@ import Link from 'next/link';
   </footer>
   </div>
   </div>  
-  <footer className={`footer footer-center p-4 ${currentTheme==='dark'?'bg-neutral  text-neutral-content':'bg-[#ddd] text-black'}`}>
-  <div>
-    <p className={footerst.footerCopy}>Copyright © 2023 - All right reserved by  <span className={footerst.footerlast}>ACME Industries Ltd</span> </p>
+  <footer className={`footer  p-4 ${currentTheme==='dark'?'bg-[#252525]  ':'bg-[#d6d6d6] text-[#404040]'}`}>
+  <div className={`container mx-auto  ${footerst.containerDiv}`}>
+    <p className={`w-full text-[16px] sm:block sm:text-center  flex justify-around md:text-[14px] ${footerst.footbottom}`}>
+      <span className=' w-2/6'> &#169; 2023 AppBuscut	</span>
+      <span className='text-center sm:mx-[20px] w-2/6'>version: 3.8.2</span>
+      <span className={`text-right  w-2/6 ${footerst.footxt}`}>Devloped by <Link href="#"  className='text-[#ff6e01] text-[16px]'>Appbucket system ltd</Link></span>
+    </p>
   </div>
  
 </footer>

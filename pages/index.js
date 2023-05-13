@@ -37,7 +37,6 @@ export default function Home() {
     <Banner currentTheme={currentTheme}></Banner>
     <Catagory currentTheme={currentTheme}></Catagory>
     <ShowItem currentTheme={currentTheme}></ShowItem>
-    <Package></Package>
     <Footer currentTheme={currentTheme}></Footer>
     </main>
     </div>

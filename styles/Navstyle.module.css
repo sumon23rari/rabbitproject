@@ -6,6 +6,9 @@
     margin-top: 12%;
     margin-left: 12%;
 }
+.Btn:hover{
+    background: transparent;
+}
 .subButton{
     background: linear-gradient(254.81deg,#ff6e01 8.13%,#f42829 92.46%);
     border: 1px solid transparent;
@@ -71,7 +74,10 @@
         color: #fff!important;
         background: orangered;
     }
- 
+    .subButton{
+        width: 130px;
+        margin: 6px 19px;
+    }
     .navEnd{
         display: none;
     }
@@ -88,6 +94,11 @@
     .mainNavbar{
         padding-left: 0!important;
       
+    }
+    .subButton{
+        width: 130px;
+        margin: 6px 19px;
+
     }
     .darkIcon{
         background: #222!important;  

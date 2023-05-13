@@ -20,7 +20,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
     setShow(!show)
   }
   return (
-    <div className={`fixed z-30 navbar bg-base-100  ${currentTheme==='dark'?'bg-black text-white':'bg-[#ddd]'} ${Nastyle.mainNavbar}`}>
+    <div className={`fixed z-30 navbar bg-base-100  ${currentTheme==='dark'?'bg-black text-white':'bg-[rgba(255,255,255,.68]'} ${Nastyle.mainNavbar}`}>
     <div className={`navbar-start ${Nastyle.navStart}`}>
       <div className={`${Nastyle.Drop}`}>
         <label tabIndex={0} className="btn btn-ghost lg:hidden" onClick={showDrop}>
@@ -57,6 +57,8 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
   </div>
 </div>
          </li>
+         <li><a className={`${Nastyle.subButton}`} href='/Package'>subscribe now</a></li>
+         
           <div onClick={showbutton}>
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full ml-2">
@@ -71,7 +73,7 @@ export default function Navbarsd({handleDark,handlelight,currentTheme}) {
         </span>
       
       </div>
-      <a className={`btn btn-ghost normal-case text-xl ${Nastyle.Btn}`}>
+      <a className={`btn btn-ghost normal-case text-xl ${Nastyle.Btn}`} href='/'>
         
         {currentTheme==='dark' ?<Image src={logo}></Image>:<Image src={logoLight}></Image>}
       </a>

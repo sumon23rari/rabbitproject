@@ -11,19 +11,19 @@ let [choice,setchoice]=useState('month');
   return (
     <div>
       <Navbarsd></Navbarsd>
-      <div className={`xl:pt-[120px] lg:pt-[120px] lg:px-[15px] xl:px-[15px] ${dataStyle.priceContainer}`}>
-        <div className='lg:max-w-[1140px] xl:max-w-[1280px] lg:mx-auto xl:container-xl xl:mx-auto'>
-          <div className="price-section lg:pb-[50px] xl:m-[50px auto] lg:m-[50px auto] lg:max-w-[880px] mx-auto">
+      <div className={`xl:pt-[120px] lg:pt-[120px] pt-[140px]  md:pt-[120px] px-[30px]  lg:px-[15px] xl:px-[15px] ${dataStyle.priceContainer}`}>
+        <div className='lg:max-w-[1140px] md:max-w-[880px] mx-auto xl:max-w-[1280px] lg:mx-auto xl:container-xl xl:mx-auto'>
+          <div className="price-section pb-[50px]  sm:m-[50px auto]  xl:m-[50px auto] md:m-[50px 0] lg:m-[50px auto] lg:max-w-[880px] mx-auto">
     <div className={`${dataStyle.priceBox}`}>
-      <div className="grid lg:grid-cols-2 xl:grid-cols-2">
+      <div className="grid lg:grid-cols-2 grid-cols-1 xl:grid-cols-2 md:grid-cols-1">
         {/* ==============pricesection======================== */}
    
-        <div className="priceSection lg:p-[40px] xl:p-[40px] bg-[#252525] text-white">
+        <div className="priceSection md:p-[40px] p-[40px] lg:p-[40px] xl:p-[40px] bg-[#252525] text-white">
     <div>
       {/* ===========1st price====================== */}
-      <div className='w-full lg:mb-[20px] xl:mb-[20px]'>
+      <div className='w-full lg:mb-[20px] mb-[25px] md:mb-[20px] xl:mb-[20px]'>
         <label className='w-full mb-2' for="55">
-          <input type="radio" name="package" className='lg:hidden' id="55" value="L" />
+          <input type="radio" name="package" className='lg:hidden hidden' id="55" value="L" />
           <div className={`${dataStyle.dataSection} ${choice==='month'?dataStyle.dataBg:''}`}>
             <div className='grid grid-cols-2'>
              <div className='text-left'>
@@ -50,9 +50,9 @@ let [choice,setchoice]=useState('month');
       </div>
        {/* ===========1st price====================== */}
        {/* ===========2st price====================== */}
-      <div className='w-full lg:mb-[20px] xl:mb-[20px]'>
+      <div className='w-full lg:mb-[20px] mb-[25px] md:mb-[20px] xl:mb-[20px]'>
         <label className='w-full mb-2' for="55">
-          <input type="radio" name="package"  className='lg:hidden' id="55" value="L" />
+          <input type="radio" name="package"  className='lg:hidden hidden' id="55" value="L" />
           <div className={`${dataStyle.dataSection} ${choice==='daily'?dataStyle.dataBg:''}`}>
             <div className='grid grid-cols-2'>
              <div className='text-left'>
@@ -79,9 +79,9 @@ let [choice,setchoice]=useState('month');
       </div>
        {/* ===========2st price====================== */}
         {/* ===========3st price====================== */}
-        <div className='w-full lg:mb-[20px] xl:mb-[20px]'>
+        <div className='w-full lg:mb-[20px] mb-[25px] md:mb-[20px] xl:mb-[20px]'>
         <label className='w-full mb-2' for="55">
-          <input type="radio" name="package"  className='lg:hidden' id="55" value="L" />
+          <input type="radio" name="package"  className='lg:hidden hidden' id="55" value="L" />
           <div className={`${dataStyle.dataSection} ${choice==='half'?dataStyle.dataBg:''}`}>
             <div className='grid grid-cols-2'>
              <div className='text-left'>
@@ -120,7 +120,7 @@ let [choice,setchoice]=useState('month');
         </div>
              {/* ==============pricesection======================== */}
         {/* ==========priceDescription================================= */}
-        <div className={`${dataStyle.decription} lg:p-[40px] xl:p-[40px]  text-white`}>
+        <div className={`${dataStyle.decription} lg:p-[40px] p-[40px] xl:p-[40px] md:p-[40px]  text-white`}>
     <h4 className='font-bold text-[18px] mb-[20px]'>Enjoy Premium Now!</h4>
     <div className='ml-[20px]'>
       <ul>
@@ -142,7 +142,7 @@ let [choice,setchoice]=useState('month');
         {/* ==========priceDescription================================= */}
       </div>
       <div className={`${dataStyle.couwnTop}`}>
-      <Image src={muk}></Image>
+      <Image src={muk} alt="crownImg"></Image>
     </div>
     </div>
 

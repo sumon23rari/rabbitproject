@@ -17,6 +17,8 @@ import aboutpic from '../public/images/about.jpg';
             <p className='mb-[15px] leading-[27px] text-[#9899a3]'>
             About 45 minutes into their first working session, the marine biologist assigned to their team walked in with a bag of clams and set them on the table. Seeing the confused looks of the chip designers, he explained that clams can detect pollutants at just a few parts per million, and when that happens, they open their shells.
             </p>
+           
+           
             <p className='leading-[27px] text-[#9899a3] z-40'>As it turned out, they didn’t really need a fancy chip to detect pollutants — just a simple one that could alert the system to clams opening their shells. “They saved $999,000 and ate the clams for dinner,” the executive told me.</p>
         </div>
     </div>

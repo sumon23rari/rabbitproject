@@ -51,7 +51,7 @@ function Tournament() {
   return (
     <div  className={tournaStyle.tourSection}>
          <div className='text-center'>
-           <Link href="#" className={`text-white capitalize text-2xl font-bold inline-block ${tournaStyle.tourTitle}`}>
+           <Link href="#" className={`capitalize text-2xl font-bold inline-block ${tournaStyle.tourTitle}`}>
             India tours of bangladesh <span><HiChevronRight  className='inline'></HiChevronRight>
             </span>
            </Link>

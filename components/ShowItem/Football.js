@@ -48,7 +48,7 @@ import tournaStyle from '../../styles/Touranament.module.css';
   return (
     <div className={tournaStyle.footSection}>
 <div className='text-center'>
-           <Link href="#" className={`text-white capitalize text-2xl font-bold  inline-block ${tournaStyle.footTitle}`}>
+           <Link href="#" className={`capitalize text-2xl font-bold  inline-block ${tournaStyle.footTitle}`}>
            Football Legends 
 <span><HiChevronRight  className='inline'></HiChevronRight>
             </span>

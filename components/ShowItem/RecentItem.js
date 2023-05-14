@@ -11,7 +11,7 @@ import recent7 from '../../public/images/recent/recent7.jpg';
 import tournaStyle from '../../styles/Touranament.module.css';
 import Slider from 'react-slick';
 import Image from 'next/image';
- function RecentItem() {
+ function RecentItem({currentTheme}) {
     var settings = {
         dots: false,
          infinite: true,
@@ -49,7 +49,7 @@ import Image from 'next/image';
         ]
       };
   return (
-    <div className={tournaStyle.recentSection}>
+    <div  className={`${currentTheme==='dark'?'bg-[#404040] text-white':'bg-white text-[#404040]'} ${tournaStyle.recentSection}`}>
         <div className='text-center'>
            <Link href="#" className={`capitalize text-2xl font-bold text-center -mt-6 inline-block ${tournaStyle.recentTitle}`}>
             recent <span><HiChevronRight  className='inline text-center'></HiChevronRight>

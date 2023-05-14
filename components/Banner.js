@@ -7,34 +7,28 @@ import Slider from 'react-slick';
 import { BsPlayFill,BsPlus } from 'react-icons/bs';
 import { FiShare2 } from 'react-icons/fi';
 import bann from '../styles/banner.module.css';
-
-
+// import icons
+import {BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 class Question extends React.Component {
   render() {
     return <h3> Lets go for a <FaBeer />? </h3>
   }
 }
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+function SampleNextArrow({onClick}) {
+
   return (
-    <div
-      className={className}
-     
-      style={{ ...style, position:'absolute',right:'5%',zIndex:20}}
-      onClick={onClick}
-    />
+    <div className='arrow arrow-right' onClick={onClick}>
+      <BsArrowRight className='arrowRl'></BsArrowRight>
+    </div>
   );
 }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+function SamplePrevArrow({onClick}) {
   return (
-    <div
-      className={className}
-       style={{ ...style,  position: 'absolute',left:'80%',zIndex:20}}
-      onClick={onClick}
-    />
+  <div className='arrow arrow-left' onClick={onClick}>
+    <BsArrowLeft className='arrowRl'></BsArrowLeft>
+    </div>
   );
 }
 export default function Banner({currentTheme}) { 
@@ -72,14 +66,14 @@ const settings = {
       <Image src={img1} className=' h-full' alt='img1'>
 
       </Image>
-      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+      <div className={`${bann.buttonGroup}`}>
   <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button>  <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
   </div>
     </div>
        {/* =============banner 02 item====== */}
     <div>
       <Image src={img2} className='h-full' alt='img1'></Image>
-      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+      <div className={`${bann.buttonGroup}`}>
   <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button>  <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
   </div>
     </div>
@@ -87,14 +81,14 @@ const settings = {
   {/* ==========banner 03 part=========== */}
     <div>
       <Image src={img3} className='h-full' alt='img1'></Image>
-      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+      <div className={`${bann.buttonGroup}`}>
   <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button>  <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
   </div>
     </div>
     {/* ===========last banner item */}
     <div>
       <Image src={img1} className='h-full' alt='img1'></Image>
-      <div className={`${bann.buttonGroup} hidden lg:block xl:block 2xl:block`}>
+      <div className={`${bann.buttonGroup}`}>
   <button className={`${bann.btn} ${bann.watchButton}`}><BsPlayFill className="inline"> </BsPlayFill> watch now</button> <button className= {`${bann.btn} ${bann.watchlist}`}><BsPlus className='inline'></BsPlus> <span>add to watch List</span></button> <button className={`${bann.btn} ${bann.shareButton}`}><FiShare2></FiShare2></button>
   </div>
     </div>

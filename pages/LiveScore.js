@@ -18,7 +18,7 @@ export default function LiveScore({currentTheme}) {
     ]
   return (
     <div className={`${liveside.livebg}`}>
-        <Navbarsd></Navbarsd>
+        <Navbarsd  className={`${currentTheme==='dark'?'bg-[#404040] text-white':'bg-white text-[#404040]'}`}></Navbarsd>
         <h3 className={liveside.liveHeading}>Current Live Match</h3>
 <div className= {liveside.liveMain}>
     

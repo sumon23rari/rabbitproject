@@ -34,7 +34,7 @@
     background: transparent;
 }
 .userIcon:hover{
-    background: transparent;
+    background: linear-gradient(254.81deg,#ff6e01 8.13%,#f42829 92.46%);
 }
 .navLink:hover{
     background: transparent;
